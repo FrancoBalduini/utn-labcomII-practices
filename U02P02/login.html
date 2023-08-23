@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+</head>
+<body>
+    <h1>Iniciar Sesión</h1>
+    <p>Sigue los sig. pasos: </p>
+    <ol>
+        <li>Ingresa tu nombre de usuario y contraseña.</li>
+        <li>Haz clic en el botón "Iniciar Sesión".</li>
+        <li>Opcional: Marca la casilla para recordar tus datos.</li>
+        <li>Haz clic en el botón "Enviar"</li>
+    </ol>
+    <form action="login.html" method="post" target="_self">
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" name="usuario" required><br><br>
+        
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required><br><br>
+        
+        <input type="checkbox" id="recordar" name="recordar">
+        <label for="recordar">Recordar mis datos</label><br><br>
+        
+        <input type="submit" value="Iniciar Sesión">
+    </form>
+</body>
+</html>
